@@ -32,8 +32,11 @@ git clone https://github.com/HXCblog/Exdoc-Api.git
 ## 补充说明
 
 1.ci框架默认路径中带有index.php ，如果你使用了apache服务器，并且启用了 mod_rewrite ，你可以简单的通过一个 .htaccess 文件再加上一些简单的规则就可以移除 index.php 了。
+
 2.打开/application/config/config.php文件，找到$config['index_page'] = 'index.php' //这里可以去除，去除后路径有所变化，apache服务器需要设置重写规则
+
 3. .htaccess 文件重写规则如下
+
 ``` bash
 RewriteEngine On  
 RewriteCond %{REQUEST_FILENAME} !-f  
