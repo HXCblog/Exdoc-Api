@@ -6,6 +6,7 @@
 项目地址https://github.com/chriskacerguis/codeigniter-restserver
 ## 项目部署
 1.环境php5.4+
+
 ## 安装说明
 安装步骤ci框架基本类似
 ``` bash
@@ -19,6 +20,13 @@ git clone https://github.com/HXCblog/Exdoc-Api.git
 4.新建数据库exdoc或者其他名称，导入exdoc.spl数据表
 
 5.项目配置完成，部署到服务器
+
+6.如果你的前台和后台分别在部署在不同的服务器上或者不同根目录下，使用后台上传图片需要另外修改百度ueditor图片上传路径
+
+配置文件路径\exdocapi\public\ueditor\php\config.json 找到"imageUrlPrefix": "", /* 图片访问路径前缀 */
+
+填入api服务器路径，如果前后台在同一目录则为空。
+
 
 如果安装过程还有什么疑问可以参考，ci框架安装流程：https://codeigniter.org.cn/user_guide/installation/index.html
 
