@@ -12,16 +12,21 @@
 1.克隆到本地/或下载下载项目
 git clone https://github.com/HXCblog/Exdoc-Api.git
 ```
-2.修改/application/config/config.php 网站路径
-3.修改/application/config/database.php 数据库连接信息
+2.打开/application/config/config.php 找到$config['base_url'] = ''; 修改网站路径
+
+3.打开/application/config/database.php 找到$db['default'] ='' 修改数据库连接信息
+
 4.新建数据库exdoc或者其他名称，导入exdoc.spl数据表
-5.服务器配置
+
+5.项目配置完成，部署到服务器
 
 如果安装过程还有什么疑问可以参考，ci框架安装流程：https://codeigniter.org.cn/user_guide/installation/index.html
 
 ## 补充说明
+
 1.ci框架默认路径中带有index.php ，如果你使用了apache服务器，并且启用了 mod_rewrite ，你可以简单的通过一个 .htaccess 文件再加上一些简单的规则就可以移除 index.php 了。
- .htaccess 文件重写规则如下
+2.打开/application/config/config.php文件，找到$config['index_page'] = 'index.php' //这里可以去除，去除后路径有所变化，apache服务器需要设置重写规则
+3. .htaccess 文件重写规则如下
 ``` bash
 RewriteEngine On  
 RewriteCond %{REQUEST_FILENAME} !-f  
