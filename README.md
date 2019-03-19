@@ -8,7 +8,7 @@
 安装步骤ci框架基本类似
 ``` bash
 1.克隆到本地/或下载下载项目
-git clone https://github.com/HXCblog/Exdoc-Vue.git
+git clone https://github.com/HXCblog/Exdoc-Api.git
 ```
 2.修改/application/config/config.php 网站路径
 3.修改/application/config/database.php 数据库连接信息
