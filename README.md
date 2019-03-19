@@ -8,9 +8,8 @@
 1.环境php5.4+
 
 ## 安装说明
-安装步骤ci框架基本类似
+1.安装步骤ci框架基本类似，克隆到本地/或下载下载项目
 ``` bash
-1.克隆到本地/或下载下载项目
 git clone https://github.com/HXCblog/Exdoc-Api.git
 ```
 2.打开/application/config/config.php 找到$config['base_url'] = ''; 修改网站路径
